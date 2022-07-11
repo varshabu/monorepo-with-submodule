@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-with-submodule",
+  "version": "1.0.0",
+  "description": "React monorepo with git submodules",
+  "main": "index.js",
+  "author": "Varsha Umesh",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "devDependencies": {
+    "lerna": "^5.1.8",
+    "typescript": "^4.7.4"
+  }
+}
